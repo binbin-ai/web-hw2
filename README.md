@@ -19,7 +19,7 @@
 | 5 | filterByRating(movies, 8).length | 5 | 5 |
 | 6 | search(movies, " 인터 ").length | 1 | 1 |
 | 7 | yearsSince("2014-11-06") | 12 | 12 |
-| 8 | sortBy(movies, "rating", true)[1].title 이후 movies[1].title | sortBy(movies, "rating", true)[1].title=>'인터스텔라' movies[1].title=>'어벤져스: 엔드게임' | sortBy(movies, "rating", true)[1].title=>'인터스텔라' movies[1].title=>'어벤져스: 엔드게임' | // 원본 리스트와 순위 정렬 리스트의 1등이 같아 1번 인덱스로 시연
+| 8 | sortBy(movies, "rating", true)[1].title 이후 movies[1].title(원본 리스트와 순위 정렬 리스트의 1등이 같아 1번 인덱스로 시연) | sortBy(movies, "rating", true)[1].title=>'인터스텔라' movies[1].title=>'어벤져스: 엔드게임' | sortBy(movies, "rating", true)[1].title=>'인터스텔라' movies[1].title=>'어벤져스: 엔드게임' |
 ## 어려웠던 점 3가지와 해결
 - PartA 배열이 PartB 배열과 같이 리스트 내부 객체 리터럴 형식인 줄 알고 과제를 진행했으나, 요구사항을 보고 아니라는것을 깨달은 후 수정함
 - JS 문법이나 규칙이 다른 프로그래밍 언어와 다른것들이 많아서 해당 문법 사용법을 검색하여 과제 진행
