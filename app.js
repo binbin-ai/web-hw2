@@ -193,7 +193,9 @@ const averageBy = (list, key) => {
     return sum / list.length;
 
 }
-console.log(`${TMDB.page}, ${TMDB.total_pages}, ${TMDB.total_results} ${getList(TMDB).length}`)
-console.log(`${averageBy(getList(TMDB), "vote_average").toFixed(1)}`)
+
+console.log(`C1 page ${TMDB.page}, total_pages ${TMDB.total_pages}, total_results ${TMDB.total_results}, 이번 응답 ${getList(TMDB).length}편`)
+console.log(`C2 상영작 평균 평점: ${averageBy(getList(TMDB), "vote_average").toFixed(1)}`)
+console.log(`C4 'Hunger' 검색: ${search(getList(TMDB), "Hunger").length}편`)
 console.table(sortBy(getList(TMDB), "vote_average", true).slice(0, 5), ["title","release_date", "vote_average"]);
-console.log(search(getList(TMDB), "Hunger").length)
+
